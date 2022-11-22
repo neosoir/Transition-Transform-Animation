@@ -1,0 +1,71 @@
+img {
+
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 2s;
+
+
+
+    // Translate
+    &.translate {
+
+        &:hover {
+
+            transform: translate(-400px, 200px);
+
+        }
+
+    }
+
+    // Scale
+    &.scale {
+
+        &:hover {
+
+            transform: scale(2, 2);
+
+        }
+
+    }
+
+    // Rotalte
+    &.rotate {
+
+        &:hover {
+
+            transform: rotate(360deg);
+
+        }
+
+    }
+
+    // Skew
+    &.skew {
+
+        &:hover {
+
+            transform: skew(90deg);
+
+        }
+
+    }
+
+    // Origin
+    //transform-origin: left;
+    transform-origin: 20% 20%;
+
+    &.origin {
+
+        &:hover {
+
+            transform: rotate(360deg);
+
+        }
+
+    }
+
+
+
+}

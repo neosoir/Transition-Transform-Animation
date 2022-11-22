@@ -1,0 +1,25 @@
+img {
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+  transition: transform 2s;
+  transform-origin: 20% 20%;
+}
+img.translate:hover {
+  transform: translate(-400px, 200px);
+}
+img.scale:hover {
+  transform: scale(2, 2);
+}
+img.rotate:hover {
+  transform: rotate(360deg);
+}
+img.skew:hover {
+  transform: skew(90deg);
+}
+img.origin:hover {
+  transform: rotate(360deg);
+}
+
+/*# sourceMappingURL=style.css.map */

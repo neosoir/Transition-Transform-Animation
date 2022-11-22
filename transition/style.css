@@ -5,12 +5,12 @@ button {
   color: white;
   border: none;
   background-color: blue;
-  transition-property: background-color;
-  transition-duration: 1s;
-  transition-delay: 2s;
+  transition: all 3s ease-in 2s;
 }
 button:hover {
   background-color: green;
+  color: black;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,9 +9,9 @@ div {
   margin: 20px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 14px;
   transition: transform 1s;
   transition-property: translate();
-  transition-duration: 1s;
 }
 div.scale:hover {
   transform: scale(1.2);

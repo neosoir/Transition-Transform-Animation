@@ -8,6 +8,7 @@ button {
     background-color: blue;
     transition-property: background-color;
     transition-duration: 1s;
+    transition-delay: 2s;
 
     &:hover {
 

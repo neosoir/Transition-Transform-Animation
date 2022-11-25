@@ -12,9 +12,9 @@ body .buttons {
 }
 body .buttons .item {
   margin: 20px;
+  text-decoration: none;
 }
 body .buttons .rotate {
-  text-decoration: none;
   color: #272727;
   font-family: sans-serif;
   font-size: 45px;
@@ -38,6 +38,77 @@ body .buttons .rotate::before {
 }
 body .buttons .rotate:hover::before {
   transform: rotate(0deg);
+}
+body .buttons .swipe {
+  color: #351435;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #351435;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+body .buttons .swipe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #351435;
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+body .buttons .swipe:hover {
+  color: white;
+}
+body .buttons .swipe:hover::before {
+  transform: translateX(0%);
+}
+body .buttons .cross {
+  padding: 40px 80px;
+  font-family: sans-serif;
+  color: #262626;
+  font-size: 45px;
+  letter-spacing: 2px;
+  border: 5px solid #262626;
+  position: relative;
+  transition: 1s;
+}
+body .buttons .cross::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+body .buttons .cross::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
+body .buttons .cross:hover {
+  color: white;
+}
+body .buttons .cross:hover::before {
+  transform: rotateX(0deg);
+}
+body .buttons .cross:hover::after {
+  transform: rotateY(0deg);
 }
 
 /*# sourceMappingURL=style.css.map */
